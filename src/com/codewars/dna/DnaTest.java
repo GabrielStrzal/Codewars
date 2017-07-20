@@ -7,15 +7,15 @@ import org.junit.Test;
 public class DnaTest {
 
 	@Test
-    public void test01() {
+    public void replaceAtoTTest() {
        assertEquals("TTTT", DnaStrand.makeComplement("AAAA"));
     }
     @Test
-    public void test02() {
+    public void replaceGandCTest() {
        assertEquals("TAACG", DnaStrand.makeComplement("ATTGC"));
     }
     @Test
-    public void test03() {
+    public void replaceTandATest() {
        assertEquals("CATA", DnaStrand.makeComplement("GTAT"));
     }   
 }
